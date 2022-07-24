@@ -38,70 +38,72 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>TIPPING<span>APP</span></h1>
-      </div>
-    </header>
-
-    <section class="total-tips">
-      <div class="container">
-        <div class="totals">
-          <p>Total per person</p>
-          <p id="total-per-person">$0.00</p>
-          <p>Tip per person</p>
-          <p id="tip-per-person">$0.00</p>
+    <div class="big-container">
+      <header>
+        <div class="container">
+          <h1>TIPPING<span>APP</span></h1>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <section class="bill">
-      <div class="container" id="total-bill-div">
-        <p id="total-bill-p">Total Bill</p>
-        <p class="total-bill-text">
-          <input
-            pattern="[0-9]*"
-            inputmode="decimal"
-            type="text"
-            class="total-text"
-            id="user-input"
-            placeholder="0"
-          />
-        </p>
-      </div>
-    </section>
-
-    <section class="logic">
-      <div class="container">
-        <p class="tip-text">Tip %</p>
-        <div class="middle-hr logic-container">
-          <button class="btn" id="minusPercent">
-            <i class="bi bi-dash-lg"></i>
-          </button>
-          <p class="total-text" id="tip-percent">15</p>
-          <button class="btn" id="plusPercent">
-            <i class="bi bi-plus-lg"></i>
-          </button>
+      <section class="total-tips">
+        <div class="container">
+          <div class="totals">
+            <p>Total per person</p>
+            <p id="total-per-person">$0.00</p>
+            <p>Tip per person</p>
+            <p id="tip-per-person">$0.00</p>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <p class="peeps-text">People</p>
-        <div class="logic-container">
-          <button class="btn" id="minusPeeps">
-            <i class="bi bi-dash-lg"></i>
-          </button>
-          <p class="total-text" id="total-peeps">4</p>
-          <button class="btn" id="plusPeeps">
-            <i class="bi bi-plus-lg"></i>
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <div id="footer">
-      <p>Made with 🤍 in KC</p>
+      <section class="bill">
+        <div class="container" id="total-bill-div">
+          <p id="total-bill-p">Total Bill</p>
+          <p class="total-bill-text">
+            <input
+              pattern="[0-9]*"
+              inputmode="decimal"
+              type="text"
+              class="total-text"
+              id="user-input"
+              placeholder="0"
+            />
+          </p>
+        </div>
+      </section>
+
+      <section class="logic">
+        <div class="container">
+          <p class="tip-text">Tip %</p>
+          <div class="middle-hr logic-container">
+            <button class="btn" id="minusPercent">
+              <i class="bi bi-dash-lg"></i>
+            </button>
+            <p class="total-text" id="tip-percent">15</p>
+            <button class="btn" id="plusPercent">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <p class="peeps-text">People</p>
+          <div class="logic-container">
+            <button class="btn" id="minusPeeps">
+              <i class="bi bi-dash-lg"></i>
+            </button>
+            <p class="total-text" id="total-peeps">4</p>
+            <button class="btn" id="plusPeeps">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="footer">
+        <p>Made with 🤍 in KC</p>
+      </div>
+
+      <script src="script.js"></script>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
