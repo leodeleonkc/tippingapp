@@ -129,3 +129,22 @@ p {
     max-width: 80%;
   }
 }
+
+.pop {
+  transform: scale(1);
+  animation: pulse-black 0.2s;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
