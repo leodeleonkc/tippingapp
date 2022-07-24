@@ -132,7 +132,7 @@ p {
 
 .pop {
   transform: scale(1);
-  animation: pulse-black 0.2s;
+  animation: pulse-black 0.2s ease;
 }
 
 @keyframes pulse-black {
