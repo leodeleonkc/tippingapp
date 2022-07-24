@@ -28,14 +28,23 @@ const minusPeepsBtn = document.getElementById("minusPeeps");
 let perCentage = 15 * 0.01;
 let totalPeeps = 4;
 
+// Animation Function
+function animate(element) {
+  element.classList.remove("pop");
+  void element.offsetWidth;
+  element.classList.add("pop");
+}
+
 // Percentage Plus and Minus Buttons
 
 plusTipBtn.addEventListener("click", function () {
   perCentage = (tipPercent.textContent++ + 1) * 0.01;
+  animate(tipPercent);
   if (billInput.value) calcTip();
 });
 
 minusTipBtn.addEventListener("click", function () {
+  animate(tipPercent);
   if (tipPercent.textContent > 1)
     perCentage = (tipPercent.textContent-- - 1) * 0.01;
   if (billInput.value) calcTip();
@@ -45,10 +54,13 @@ minusTipBtn.addEventListener("click", function () {
 
 plusPeepsBtn.addEventListener("click", function () {
   totalPeeps = totalPeepCount.textContent++ + 1;
+  animate(totalPeepCount);
   if (billInput.value) calcTip();
 });
 
 minusPeepsBtn.addEventListener("click", function () {
+  animate(totalPeepCount);
+
   if (totalPeeps > 1) totalPeeps = totalPeepCount.textContent-- - 1;
 
   if (billInput.value) calcTip();
