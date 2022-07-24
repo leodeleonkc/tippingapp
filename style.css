@@ -71,6 +71,7 @@ p {
 .tip-text,
 .peeps-text {
   margin-bottom: 0;
+  width: 80px;
 }
 
 #total-bill-div {
