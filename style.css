@@ -102,6 +102,7 @@ span {
 
 #user-input:focus {
   border: none;
+  touch-action: manipulation;
 }
 
 .btn {
@@ -112,6 +113,7 @@ span {
   border: none;
   border-radius: 3px;
   padding: 1rem;
+  touch-action: manipulation;
 }
 
 .btn:focus,
